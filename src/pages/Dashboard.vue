@@ -1,7 +1,6 @@
 <template>
+  <Header />
   <div class="flex flex-col min-h-screen">
-    <Header />
-
     <div class="max-w-3xl py-12 mx-auto">
 
       <h2 class="font-bold text-lg text-gray-600 mb-4">
@@ -31,8 +30,10 @@
     <Dialog title="Title" v-model="showDialog"> Dialog content </Dialog>
    
      </div>
+    
 
   </div>
+  <Footer />
 
 </template>
 
@@ -42,6 +43,7 @@ import { Dialog } from 'frappe-ui'
 import { createResource } from 'frappe-ui'
 import { session } from '../data/session'
 import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue';
 
 const ping = createResource({
   url: 'ping',

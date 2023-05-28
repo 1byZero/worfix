@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col min-h-screen">
-    <Header />
-
-    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+  <Header />
+  
+  <div class="flex flex-col min-h-screen">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
     </div>
 
@@ -33,11 +33,13 @@
       </p>
     </div>
     </div>
+    <Footer />
 </template>
 
 <script lang="ts" setup>
 import { session } from '../data/session'
 import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue';
 
 function submit(e) {
   let formData = new FormData(e.target)
