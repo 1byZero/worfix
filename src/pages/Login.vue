@@ -1,6 +1,12 @@
 <template>
-  <div class="m-3 flex flex-row items-center justify-center">
-    <Card title="Login to your Worf UI App!" class="w-full max-w-md mt-4">
+    <div class="flex flex-col min-h-screen">
+    <Header />
+
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
       <form class="flex flex-col space-y-2 w-full" @submit.prevent="submit">
         <Input
           required
@@ -20,12 +26,18 @@
           >Login</Button
         >
       </form>
-    </Card>
-  </div>
+      <p class="mt-10 text-center text-sm text-gray-500">
+        Not a member?
+        {{ ' ' }}
+        <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Start a 14 day free trial</a>
+      </p>
+    </div>
+    </div>
 </template>
 
 <script lang="ts" setup>
 import { session } from '../data/session'
+import Header from '../components/Header.vue'
 
 function submit(e) {
   let formData = new FormData(e.target)

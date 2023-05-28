@@ -1,6 +1,10 @@
 <template>
-  <div class="max-w-3xl py-12 mx-auto">
-    <h2 class="font-bold text-lg text-gray-600 mb-4">
+  <div class="flex flex-col min-h-screen">
+    <Header />
+
+    <div class="max-w-3xl py-12 mx-auto">
+
+      <h2 class="font-bold text-lg text-gray-600 mb-4">
       Welcome To Dashboard Page {{ session.user }}!
     </h2>
 
@@ -25,7 +29,11 @@
 
     <!-- Dialog -->
     <Dialog title="Title" v-model="showDialog"> Dialog content </Dialog>
+   
+     </div>
+
   </div>
+
 </template>
 
 <script setup>
@@ -33,6 +41,7 @@ import { ref } from 'vue'
 import { Dialog } from 'frappe-ui'
 import { createResource } from 'frappe-ui'
 import { session } from '../data/session'
+import Header from '../components/Header.vue'
 
 const ping = createResource({
   url: 'ping',
