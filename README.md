@@ -3,9 +3,9 @@
 This template should help get you started developing custom frontend for Frappe
 apps with Vue 3 and the Frappe UI package.
 
-![Auth](../worfix/src/assets/images/worfix.png)
+![Auth](https://github.com/1byZero/worfix/blob/74da63ca364393818ec6d06eb514ea04afeaa583/src/assets/images/worfix.png)
 
-![Dashboard](../worfix/src/assets/images/worfix_d.png)
+![Dashboard](https://github.com/1byZero/worfix/blob/74da63ca364393818ec6d06eb514ea04afeaa583/src/assets/images/worfix_d.png)
 
 This boilerplate sets up Vue 3, Vue Router, TailwindCSS, and Frappe UI out of
 the box. It also has basic authentication frontend.
