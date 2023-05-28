@@ -12,8 +12,10 @@
     "@heroicons/vue": "^2.0.18",
     "@iconify-json/heroicons-solid": "^1.1.7",
     "@iconify/icons-heroicons-outline": "^1.2.5",
+    "@vue/apollo-composable": "^4.0.0-beta.5",
     "feather-icons": "^4.28.0",
     "frappe-ui": "^0.0.107",
+    "graphql-tag": "^2.12.6",
     "heroicons": "^2.0.18",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12"

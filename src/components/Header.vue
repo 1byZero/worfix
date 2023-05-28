@@ -3,7 +3,7 @@
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
+            <span class="sr-only">Worfux UI App</span>
             <img class="h-8 w-auto" src="../assets/images/gameplan-logo.svg" alt="" />
           </a>
         </div>
@@ -45,7 +45,7 @@
               </PopoverPanel>
             </transition>
           </Popover>
-  
+          <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
           <a href="/dashboard" class="text-sm font-semibold leading-6 text-gray-900">Dashboard</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
@@ -79,6 +79,7 @@
                     <DisclosureButton v-for="item in [...products, ...callsToAction]" :key="item.name" as="a" :href="item.href" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</DisclosureButton>
                   </DisclosurePanel>
                 </Disclosure>
+                <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
