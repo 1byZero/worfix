@@ -7,17 +7,14 @@
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">UI/UX App</span>
                 </a>
                 <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                        <a href="#" class="mr-4 hover:underline md:mr-6">Terms of Use</a>
                     </li>
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                        <a href="#" class="mr-4 hover:underline md:mr-6 ">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
-                    </li>
-                    <li class="flex flex-row space-x-2 mt-1">
-                        <!-- <a href="#" class="hover:underline">Contact</a> -->
                         <Button @click="slotsDialog = true">Contact</Button>
                         <Dialog :options="{
                             actions: [
@@ -32,12 +29,13 @@
                                 <p class="mt-4 text-lg">
                                     <Input label="Full Name" placeholder="Jane Doe" v-model="fullName" />
                                     <Input class="mb-2" label="Email" type="email" placeholder="jane@example.com" />
-
-                                    <Input label="I have read terms and conditions" type="checkbox" />
+                                    <Input label="message" type="textarea" />
+                                    <div class="flex items-center mt-4">
+                                        <Input label="I have read terms and conditions" type="checkbox" />
+                                    </div>
                                 </p>
                             </template>
                         </Dialog>
-
                     </li>
                 </ul>
             </div>
