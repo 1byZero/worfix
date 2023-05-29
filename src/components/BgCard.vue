@@ -1,5 +1,5 @@
 <template>
-    <section class="mb-40">
+    <section class="mb-36">
   
       <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%; background-image: url('https://mdbootstrap.com/img/new/textures/full/142.jpg'); height: 500px;"></div>
   

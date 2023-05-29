@@ -3,7 +3,7 @@
 <div class="container my-24 px-6 mx-auto">
 
 <!-- Section: Design Block -->
-<section class="mb-32 text-gray-800 text-center">
+<section class="mb-18 text-gray-800 text-center">
   <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-0 items-center">
     <div class="mb-12 lg:mb-0 relative">
       <svg class="w-12 h-12 text-blue-600 mx-auto mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -55,7 +55,7 @@
 <div class="container my-24 px-6 mx-auto">
 
   <!-- Section: Design Block -->
-  <section class="mb-32 text-gray-800">
+  <section class="mb-0 text-gray-800">
     <div class="flex flex-wrap items-center">
       <div class="grow-0 shrink-0 basis-auto w-full lg:w-4/12 mb-6 md:mb-0 px-3">
         <h2 class="text-3xl font-bold mb-6">
