@@ -2,7 +2,11 @@ import './index.css'
 
 import { createApp } from 'vue'
 import router from './router'
+import { createWebHistory, createRouter } from "vue-router";
 import App from './App.vue'
+
+import Dashboard from './pages/Dashboard.vue'
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 import {
@@ -26,3 +30,4 @@ app.component('Card', Card)
 app.component('Input', Input)
 
 app.mount('#app')
+
