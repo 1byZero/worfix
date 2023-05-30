@@ -16,6 +16,18 @@ const routes = [
 
   },
 
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('@/pages/About.vue'),
+  },
+
+  {
+    path: '/marketplace',
+    name: 'Marketplace',
+    component: () => import('@/pages/Marketplace.vue'),
+  },
+
 
   {
     name: 'Login',
@@ -39,7 +51,7 @@ router.beforeEach(async (to, from, next) => {
 
   if (to.name === 'Login' && isLoggedIn) {
     next({ name: 'Home' })
-  } else if (to.name !== 'Login' && !isLoggedIn && to.name !== 'Home') {
+  } else if (to.name !== 'Login' && !isLoggedIn && to.name !== 'Home' && to.name !== 'About' && to.name !== 'Marketplace') {
     next({ name: 'Login' })
   } else {
     next()

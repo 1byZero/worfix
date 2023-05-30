@@ -35,6 +35,7 @@
     </div>
 
   </div>
+    <BrandGrid />
     <Footer />
 </template>
 
@@ -42,6 +43,7 @@
 import { session } from '../data/session'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue';
+import BrandGrid from '../components/BrandGrid.vue';
 
 function submit(e) {
   let formData = new FormData(e.target)
