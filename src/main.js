@@ -30,4 +30,3 @@ app.component('Card', Card)
 app.component('Input', Input)
 
 app.mount('#app')
-
