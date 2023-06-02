@@ -1,165 +1,118 @@
 <template>
-  <div>
-    <sidebar-component></sidebar-component>
-    <div class="relative md:ml-64 bg-blueGray-100">
-      <navbar-component></navbar-component>
-      <!-- Header -->
-      <div class="relative bg-zinc-800 md:pt-32 pb-32 pt-12">
-        <div class="px-4 md:px-10 mx-auto w-full">
-          <div>
-            <!-- Card stats -->
-            <div class="flex flex-wrap">
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                  <div class="flex-auto p-4">
-                    <div class="flex flex-wrap">
-                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                          Traffic
-                        </h5>
-                        <span class="font-semibold text-xl text-blueGray-700">
-                          350,897
-                        </span>
-                      </div>
-                      <div class="relative w-auto pl-4 flex-initial">
-                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-gray-100">
-                          <FeatherIcon name="coffee" :stroke-width="1" class="h-6 w-6 text-green-600" />
-                        </div>
-                      </div>
-                    </div>
-                      <p class="text-sm text-blueGray-400 mt-4">
-                      <span class="text-emerald-500 mr-2">
-                        <i class="fas fa-arrow-up"></i> 3.48%
-                      </span>
-                      <span class="whitespace-nowrap">
-                        Since last month
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                  <div class="flex-auto p-4">
-                    <div class="flex flex-wrap">
-                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                          New users
-                        </h5>
-                        <span class="font-semibold text-xl text-blueGray-700">
-                          2,356
-                        </span>
-                      </div>
-                      <div class="relative w-auto pl-4 flex-initial">
-                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-gray-100">
-                          <FeatherIcon name="anchor" stroke-width="3" class="h-6 w-6 text-blue-500" />
-                        </div>
-                      </div>
-                    </div>
-                    <p class="text-sm text-blueGray-400 mt-4">
-                      <span class="text-red-500 mr-2">
-                        <i class="fas fa-arrow-down"></i> 3.48%
-                      </span>
-                      <span class="whitespace-nowrap">
-                        Since last week
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                  <div class="flex-auto p-4">
-                    <div class="flex flex-wrap">
-                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                          Sales
-                        </h5>
-                        <span class="font-semibold text-xl text-blueGray-700">
-                          924
-                        </span>
-                      </div>
-                      <div class="relative w-auto pl-4 flex-initial">
-                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-gray-100">
-                          <FeatherIcon name="chevron-right" class="h-6 w-6 text-red-600" />
-                        </div>
-                      </div>
-                    </div>
-                    <p class="text-sm text-blueGray-400 mt-4">
-                      <span class="text-orange-500 mr-2">
-                        <i class="fas fa-arrow-down"></i> 1.10%
-                      </span>
-                      <span class="whitespace-nowrap">
-                        Since yesterday
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                  <div class="flex-auto p-4">
-                    <div class="flex flex-wrap">
-                      <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                          Performance
-                        </h5>
-                        <span class="font-semibold text-xl text-blueGray-700">
-                          49,65%
-                        </span>
-                      </div>
-                      <div class="relative w-auto pl-4 flex-initial">
-                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-lightBlue-500">
-                          <FeatherIcon name="coffee" :stroke-width="1" class="h-6 w-6 text-green-600" />
-                        </div>
-                      </div>
-                    </div>
-                    <p class="text-sm text-blueGray-400 mt-4">
-                      <span class="text-emerald-500 mr-2">
-                        <i class="fas fa-arrow-up"></i> 12%
-                      </span>
-                      <span class="whitespace-nowrap">
-                        Since last month
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <FooterDashboard/>
+  <Header/>
+  <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto grid max-w-7xl gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Top Influencers</h2>
+                <p class="mt-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                    necessitatibus incidunt ut officiis explicabo inventore.</p>
 
-      </div>
+
+            </div>
+            <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <li v-for="person in people" :key="person.name">
+                    <div class="flex items-center gap-x-6">
+                        <img class="h-16 w-16 rounded-full" :src="person.imageUrl" alt="">
+                        <div>
+                            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ person.name }}
+                            </h3>
+                            <p class="text-sm font-semibold leading-6 text-indigo-600">{{ person.role }}</p>
+                            
+
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
+    <Footer />
 </template>
 
 <script>
 import Header from "../components/Header.vue";  
-import NavbarComponent from "../components/Navbar.vue";
-import SidebarComponent from "../components/Sidebar.vue";
 import LineChartComponent from "../components/LineChart.vue";
 import BarChartComponent from "../components/BarChart.vue";
-import FooterDashboard from "../components/FooterDashboard.vue";
 import { FeatherIcon } from 'frappe-ui'
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "dashboard-page",
   components: {
     Header,
-    NavbarComponent,
-    SidebarComponent,
     LineChartComponent,
     BarChartComponent,
-    FooterDashboard,
-    FeatherIcon
+    FeatherIcon,
+    Footer
 },
+
+
   data() {
     return {
-      date: new Date().getFullYear()
+      people: [
+                {
+                    name: "Linus Torvalds",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Amit Kumar",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Sachin Tendulkar",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Elon Musk",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Mark Zuckerberg",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Jackie Chan",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Jackie Chan",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Jackie Chan",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Jackie Chan",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                },
+
+                {
+                    name: "Jackie Chan",
+                    role: "CEO",
+                    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                }
+
+            ]
+      
     }
   }
 };

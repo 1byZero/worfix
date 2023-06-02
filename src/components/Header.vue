@@ -45,10 +45,12 @@
               </PopoverPanel>
             </transition>
           </Popover>
-          <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-          <a href="/dashboard" class="text-sm font-semibold leading-6 text-gray-900">Dashboard</a>
-          <a href="/marketplace" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-          <a href="/about" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+          <button class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" @click="$router.push('/')">Home</button>
+          <button class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" @click="$router.push('/dashboard')">Dashboard</button>
+          <button class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" @click="$router.push('/marketplace')">Marketplace</button>
+          <button class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" @click="$router.push('/about')">Company</button>
+          <Button class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" @click="session.logout.submit()">Logout</Button>
+          
         </PopoverGroup>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="/log-in" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
@@ -96,6 +98,7 @@
   
   <script setup>
   import { ref } from 'vue'
+  import { session } from '../data/session'
   import {
     Dialog,
     DialogPanel,

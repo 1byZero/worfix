@@ -60,13 +60,11 @@
               Dashboard</a>
           </li>
           <li class="items-center">
-            <a class="text-blue-700 hover:text-yellow-600 text-xs uppercase py-3 font-bold block" href="#/about"><i
-                class="fas fa-newspaper text-blueGray-400 mr-2 text-sm"></i>
-              About</a>
+            <button class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" @click="$router.push('/about')">Company</button>
           </li>
           <li class="items-center">
             <a class="text-blue-700 hover:text-yellow-600 text-xs uppercase py-3 font-bold block"
-              href="#/profile"><i class="fas fa-user-circle text-blueGray-400 mr-2 text-sm"></i>
+              href="/profile"><i class="fas fa-user-circle text-blueGray-400 mr-2 text-sm"></i>
               Profile Page</a>
           </li>
           <li class="items-center">
